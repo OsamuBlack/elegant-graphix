@@ -1,0 +1,152 @@
+.row {
+    @include clearfix;
+
+&--gutters {
+    margin-right: -$gutters-horizontal;
+    margin-bottom: -$gutters-vertical;
+}
+
+&--gutters > div {
+    padding-right: $gutters-horizontal;
+    margin-bottom: $gutters-vertical;
+}
+&--gutters-narrow {
+    margin-right: -$gutters-minimum;
+    margin-bottom: -$gutters-minimum;
+}
+
+&--gutters-narrow > div {
+    padding-right: $gutters-minimum;
+    margin-bottom: $gutters-minimum;
+}
+
+
+&__3 {
+    width: 25%;
+    float: left;
+}
+
+&__4 {
+    width: 33.33%;
+    float: left;
+}
+
+&__6 {
+    width: 50%;
+    float: left;
+}
+
+&__phone-2
+&__phone-3
+&__phone-4
+&__phone-6
+&__tab-port-3
+&__tab-port-4
+&__tab-port-6 {
+    float: none;
+    width: 100%;
+}
+
+@include respond(phone) {
+    &__phone-2 {
+        width: 20%;
+        float: left;
+    }
+
+    &__phone-3 {
+        width: 25%;
+        float: left;
+    }
+
+    &__phone-4 {
+        width: 33.33%;
+        float: left;
+    }
+
+    &__phone-6 {
+        width: 50%;
+        float: left;
+    }
+}
+
+@include respond(tab-port) {
+    &__tab-port-3 {
+        width: 25%;
+        float: left;
+    }
+
+    &__tab-port-4 {
+        width: 33.33%;
+        float: left;
+    }
+
+    &__tab-port-6 {
+        width: 50%;
+        float: left;
+    }
+}
+    /*
+    &:not(:last-child) {
+        
+        margin-bottom: $gutters-vertical-small;
+        
+        @include respond(phone) {
+            margin-bottom: $gutters-vertical;
+        }
+    }
+   
+    & > * {        
+        padding-right: 0;
+        margin-bottom: $gutters-vertical-small;
+        @include respond(phone) {
+            float: left;
+            padding-right: $gutters-horizontal;
+            margin-bottom: 0;
+        }
+    }
+
+    &--gutters-small {
+        &:not(:last-child) {
+            margin-bottom: $gutters-minimum;
+            
+            @include respond(phone) {
+                margin-bottom: $gutters-minimum;
+            }
+        }
+        
+        & > * {        
+            @include respond(phone) {
+                padding-right: $gutters-minimum;
+            }
+        }
+    }
+
+    .col__md-1-of-2,
+    .col__md-1-of-3,
+    .col__md-1-of-4,
+    .col__md-2-of-3,
+    .col__md-3-of-4 {
+        height: fill-available;
+        width: 100%;
+    }
+
+    @include respond(phone) {
+        .col-1-of-2
+        {
+            width: 50%;
+        }
+        .col-1-of-3 {
+            width: 33.33%;
+    
+        }
+        .col-1-of-4 {
+            width: 25%;
+        }
+        .col-2-of-3 {
+            width: 66.66%;
+        }
+        .col-3-of-4 {
+            width: 75%;
+        } 
+    }*/
+}
