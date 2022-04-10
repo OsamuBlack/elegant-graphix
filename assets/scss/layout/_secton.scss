@@ -1,0 +1,29 @@
+.section {
+    padding: 5rem 0;
+    background-color: $color-grey-light-1;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+
+    &--dark {
+        background-color: $color-black;
+    }
+
+    &--padding-small {
+        padding: 3rem 0;
+        
+        @include respond(tab-port) {
+            padding: 5rem 0;
+        }
+    }
+
+    &--features {
+        background-image: linear-gradient(to right bottom,
+        rgba($color-black, 0.3),
+        rgba($color-black, 0.4)),
+        url("../imgs/workdesk-bg.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}

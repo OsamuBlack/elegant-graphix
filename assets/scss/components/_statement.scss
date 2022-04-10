@@ -1,0 +1,19 @@
+.statement {
+    & > * {
+        z-index: 10;
+        color: $color-grey-dark-2;
+    }
+
+    border-left: .3rem solid $color-grey-dark-2;
+    transition: all .3s;
+    padding-left: 2rem;
+
+    &:hover {
+        border-left-color: $color-primary-dark;
+    }
+
+    &__context {
+        display: block;
+        font-size: 2rem;
+    }
+}

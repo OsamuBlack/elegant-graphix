@@ -1,0 +1,11 @@
+.logo {
+    &__container {
+        height: 15rem;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    &__img {
+        max-height: 15rem;
+    }
+}
